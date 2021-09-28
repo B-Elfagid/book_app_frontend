@@ -1,14 +1,17 @@
+
 import logo from './logo.svg';
 import './App.css';
-
+import Book from './Book';
 function App() {
+
+   const read = {title: "Born a crime", author: "Trevor Noah"}
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+  
+        <Book {...read} />
         <a
           className="App-link"
           href="https://reactjs.org"
